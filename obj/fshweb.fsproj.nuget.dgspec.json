@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/chris/dev/scratch/fshweb/fshweb.fsproj": {}
+  },
+  "projects": {
+    "/home/chris/dev/scratch/fshweb/fshweb.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/chris/dev/scratch/fshweb/fshweb.fsproj",
+        "projectName": "fshweb",
+        "projectPath": "/home/chris/dev/scratch/fshweb/fshweb.fsproj",
+        "packagesPath": "/home/chris/.nuget/packages/",
+        "outputPath": "/home/chris/dev/scratch/fshweb/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/chris/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "/home/chris/nuget-custom-packages/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://artifactory.domain.com.au/api/nuget/CRE/": {},
+          "https://artifactory.domain.com.au/api/nuget/Domain": {},
+          "https://artifactory.domain.com.au/api/nuget/Trade/": {},
+          "https://artifactory.domain.com.au/api/nuget/TradePlatform/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
