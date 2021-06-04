@@ -32,3 +32,12 @@
 /home/chris/dev/scratch/fshweb/obj/Debug/net5.0/fshweb.dll
 /home/chris/dev/scratch/fshweb/obj/Debug/net5.0/fshweb.pdb
 /home/chris/dev/scratch/fshweb/obj/Debug/net5.0/fshweb.genruntimeconfig.cache
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Microsoft.OpenApi.dll
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/chris/dev/scratch/fshweb/obj/Debug/net5.0/fshweb.MvcApplicationPartsAssemblyInfo.fs
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Newtonsoft.Json.dll
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/chris/dev/scratch/fshweb/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll

@@ -44,9 +44,20 @@
               "version": "[5.0.0, )",
               "generatePathProperty": true
             },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.6, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )",
+              "generatePathProperty": true
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.1.4, )"
+              "version": "[6.1.4, )",
+              "generatePathProperty": true
             }
           },
           "imports": [
