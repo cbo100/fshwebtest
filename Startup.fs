@@ -14,6 +14,7 @@ open Microsoft.Extensions.Hosting
 open Swashbuckle.AspNetCore.Swagger
 open Microsoft.OpenApi.Models
 open Newtonsoft.Json;
+open Microsoft.FSharpLu.Json
 
 type Startup(configuration: IConfiguration) =
     member _.Configuration = configuration
@@ -24,8 +25,19 @@ type Startup(configuration: IConfiguration) =
         let info = OpenApiInfo()
         info.Title <- "My API V1"
         info.Version <- "v1"
-        services.AddSwaggerGen(fun config -> config.SwaggerDoc("v1", info)) |> ignore
-        services.AddControllers().AddNewtonsoftJson() |> ignore
+        services.AddSwaggerGen(fun config -> 
+          config.SwaggerDoc("v1", info)
+          config.MapType<String option>(fun s -> OpenApiSchema ( Type = "string"))
+          // config.MapType<WindInformation option>(fun s -> OpenApiSchema ( Type = "object", Title = "WindInformation" ))
+        ) |> ignore
+        services
+          .AddControllers()
+          .AddNewtonsoftJson(fun options -> 
+            let settingsToAdd = Compact.TupleAsArraySettings.settings
+            options.SerializerSettings.NullValueHandling <- settingsToAdd.NullValueHandling
+            for converter in settingsToAdd.Converters do
+             options.SerializerSettings.Converters.Add(converter)
+          ) |> ignore
         
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

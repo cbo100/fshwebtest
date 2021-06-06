@@ -102,6 +102,19 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
+      "Microsoft.FSharpLu.Json/0.11.6": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.5.4",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.FSharpLu.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.FSharpLu.Json.dll": {}
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "type": "package",
         "compile": {
@@ -341,6 +354,22 @@
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
       ]
     },
+    "Microsoft.FSharpLu.Json/0.11.6": {
+      "sha512": "BRH3w2LRqMgLWnTiuOO5u1ZsDjkExPpURXEF1owrbhE7ahtL1OdiXdK9cw5dy067ncQufWX96vK8oLrY485sug==",
+      "type": "package",
+      "path": "microsoft.fsharplu.json/0.11.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.MD",
+        "lib/net461/Microsoft.FSharpLu.Json.dll",
+        "lib/net462/Microsoft.FSharpLu.Json.dll",
+        "lib/net472/Microsoft.FSharpLu.Json.dll",
+        "lib/netstandard2.0/Microsoft.FSharpLu.Json.dll",
+        "microsoft.fsharplu.json.0.11.6.nupkg.sha512",
+        "microsoft.fsharplu.json.nuspec"
+      ]
+    },
     "Microsoft.OpenApi/1.2.3": {
       "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "type": "package",
@@ -483,6 +512,7 @@
     "net5.0": [
       "FSharp.Core >= 5.0.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.6",
+      "Microsoft.FSharpLu.Json >= 0.11.6",
       "Newtonsoft.Json >= 13.0.1",
       "Swashbuckle.AspNetCore >= 6.1.4"
     ]
@@ -533,6 +563,11 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[5.0.6, )",
+            "generatePathProperty": true
+          },
+          "Microsoft.FSharpLu.Json": {
+            "target": "Package",
+            "version": "[0.11.6, )",
             "generatePathProperty": true
           },
           "Newtonsoft.Json": {

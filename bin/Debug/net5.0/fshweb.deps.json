@@ -35,6 +35,7 @@
         "dependencies": {
           "FSharp.Core": "5.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.6",
+          "Microsoft.FSharpLu.Json": "0.11.6",
           "Newtonsoft.Json": "13.0.1",
           "Swashbuckle.AspNetCore": "6.1.4",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -413,6 +414,21 @@
       },
       "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
+      "Microsoft.FSharpLu.Json/0.11.6": {
+        "dependencies": {
+          "FSharp.Core": "5.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.FSharpLu.Json.dll": {
+            "assemblyVersion": "0.11.6.0",
+            "fileVersion": "0.11.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.FSharpLu.Json.dll": {}
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -2236,6 +2252,13 @@
       "sha512": "sha512-LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "path": "microsoft.extensions.apidescription.server/3.0.0",
       "hashPath": "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.FSharpLu.Json/0.11.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BRH3w2LRqMgLWnTiuOO5u1ZsDjkExPpURXEF1owrbhE7ahtL1OdiXdK9cw5dy067ncQufWX96vK8oLrY485sug==",
+      "path": "microsoft.fsharplu.json/0.11.6",
+      "hashPath": "microsoft.fsharplu.json.0.11.6.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",

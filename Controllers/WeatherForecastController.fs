@@ -27,17 +27,28 @@ type WeatherForecastController (logger : ILogger<WeatherForecastController>) =
             "Scorching"
         |]
 
-    [<HttpGet>]
+    [<HttpGet;
+      // ProducesResponseType(typeof<WeatherForecastContract list>, 200);
+      ProducesResponseType(typeof<WeatherForecast list>, 200);
+      ProducesResponseType(404);>]    
     member _.Get() =
         let rng = System.Random()
         [|
             for index in 0..4 ->
-                { Date = DateTime.Now.AddDays(float index)
-                  TemperatureC = rng.Next(-20,55)
-                  Summary = summaries.[rng.Next(summaries.Length)]
-                  Wind = Some { 
-                    Speed = 10 
-                    Direction = "south"
-                  } 
-                }
+                WeatherForecast (
+                   None, // Some DateTime.Now.AddDays(float index)
+                   rng.Next(-20,55),
+                   Some summaries.[rng.Next(summaries.Length)],
+                   WindInformation( 10, "south" ) // { 
+                  //   Speed = 10 
+                  //   Direction = "south"
+                  //  }
+                )
+                
         |]
+
+
+// Options:
+// - fake response type contract
+// - MapType() for each type
+// - Nullable<>
