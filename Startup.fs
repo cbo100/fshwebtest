@@ -27,8 +27,6 @@ type Startup(configuration: IConfiguration) =
         info.Version <- "v1"
         services.AddSwaggerGen(fun config -> 
           config.SwaggerDoc("v1", info)
-          config.MapType<String option>(fun s -> OpenApiSchema ( Type = "string"))
-          // config.MapType<WindInformation option>(fun s -> OpenApiSchema ( Type = "object", Title = "WindInformation" ))
         ) |> ignore
         services
           .AddControllers()

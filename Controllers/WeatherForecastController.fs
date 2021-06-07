@@ -36,13 +36,13 @@ type WeatherForecastController (logger : ILogger<WeatherForecastController>) =
         [|
             for index in 0..4 ->
                 WeatherForecast (
-                   None, // Some DateTime.Now.AddDays(float index)
-                   rng.Next(-20,55),
-                   Some summaries.[rng.Next(summaries.Length)],
-                   WindInformation( 10, "south" ) // { 
-                  //   Speed = 10 
-                  //   Direction = "south"
-                  //  }
+                    None, // Some DateTime.Now.AddDays(float index)
+                    rng.Next(-20,55),
+                    Some summaries.[rng.Next(summaries.Length)],
+                    Some { 
+                        Speed = 10 
+                        Direction = "south"
+                    }
                 )
                 
         |]

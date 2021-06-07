@@ -4,27 +4,28 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/chris/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/chris/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Chris\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/home/chris/.nuget/packages/" />
+    <SourceRoot Include="C:\Users\Chris\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server/3.0.0/build/Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server/3.0.0/build/Microsoft.Extensions.ApiDescription.Server.props')" />
-    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore/6.1.4/build/Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore/6.1.4/build/Swashbuckle.AspNetCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.1.4\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.1.4\build\Swashbuckle.AspNetCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">/home/chris/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
-    <PkgSwashbuckle_AspNetCore Condition=" '$(PkgSwashbuckle_AspNetCore)' == '' ">/home/chris/.nuget/packages/swashbuckle.aspnetcore/6.1.4</PkgSwashbuckle_AspNetCore>
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/home/chris/.nuget/packages/newtonsoft.json/13.0.1</PkgNewtonsoft_Json>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/chris/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
-    <PkgMicrosoft_FSharpLu_Json Condition=" '$(PkgMicrosoft_FSharpLu_Json)' == '' ">/home/chris/.nuget/packages/microsoft.fsharplu.json/0.11.6</PkgMicrosoft_FSharpLu_Json>
-    <PkgMicrosoft_AspNetCore_Mvc_NewtonsoftJson Condition=" '$(PkgMicrosoft_AspNetCore_Mvc_NewtonsoftJson)' == '' ">/home/chris/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/5.0.6</PkgMicrosoft_AspNetCore_Mvc_NewtonsoftJson>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Chris\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgSwashbuckle_AspNetCore Condition=" '$(PkgSwashbuckle_AspNetCore)' == '' ">C:\Users\Chris\.nuget\packages\swashbuckle.aspnetcore\6.1.4</PkgSwashbuckle_AspNetCore>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Chris\.nuget\packages\newtonsoft.json\13.0.1</PkgNewtonsoft_Json>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Chris\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+    <PkgMicrosoft_FSharpLu_Json Condition=" '$(PkgMicrosoft_FSharpLu_Json)' == '' ">C:\Users\Chris\.nuget\packages\microsoft.fsharplu.json\0.11.6</PkgMicrosoft_FSharpLu_Json>
+    <PkgMicrosoft_AspNetCore_Mvc_NewtonsoftJson Condition=" '$(PkgMicrosoft_AspNetCore_Mvc_NewtonsoftJson)' == '' ">C:\Users\Chris\.nuget\packages\microsoft.aspnetcore.mvc.newtonsoftjson\5.0.6</PkgMicrosoft_AspNetCore_Mvc_NewtonsoftJson>
   </PropertyGroup>
 </Project>

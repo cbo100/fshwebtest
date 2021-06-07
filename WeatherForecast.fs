@@ -44,26 +44,15 @@ type FilterableEntity() =
         shouldSerialize
 
 
-type WindInformation =
-  struct
-    val Speed: int
-    val Direction: string
-    new(speed: int, direction: string) = { Speed = speed; Direction = direction }
-  end
-
-type WeatherForecastContract = 
-  {
-    Date: DateTime
-    TemperatureC: int
-    TemperatureF: float
-    Summary: string
-    Wind: WindInformation
-  }
+type WindInformation = {
+    Speed: int
+    Direction: string
+}
 
 type WeatherForecast (date: DateTime option,
       temperatureC: int,
       summary: string option,
-      wind: Nullable<WindInformation>
+      wind: WindInformation option
     ) = 
     inherit FilterableEntity()
 

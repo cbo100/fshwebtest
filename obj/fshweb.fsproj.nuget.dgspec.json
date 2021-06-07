@@ -1,31 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/home/chris/dev/scratch/fshweb/fshweb.fsproj": {}
+    "C:\\Users\\Chris\\dev\\cbo100\\fshwebtest\\fshweb.fsproj": {}
   },
   "projects": {
-    "/home/chris/dev/scratch/fshweb/fshweb.fsproj": {
+    "C:\\Users\\Chris\\dev\\cbo100\\fshwebtest\\fshweb.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/chris/dev/scratch/fshweb/fshweb.fsproj",
+        "projectUniqueName": "C:\\Users\\Chris\\dev\\cbo100\\fshwebtest\\fshweb.fsproj",
         "projectName": "fshweb",
-        "projectPath": "/home/chris/dev/scratch/fshweb/fshweb.fsproj",
-        "packagesPath": "/home/chris/.nuget/packages/",
-        "outputPath": "/home/chris/dev/scratch/fshweb/obj/",
+        "projectPath": "C:\\Users\\Chris\\dev\\cbo100\\fshwebtest\\fshweb.fsproj",
+        "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chris\\dev\\cbo100\\fshwebtest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/chris/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "/home/chris/nuget-custom-packages/": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\temp\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://artifactory.domain.com.au/api/nuget/CRE/": {},
+          "https://artifactory.domain.com.au/api/nuget/CorePlatform": {},
           "https://artifactory.domain.com.au/api/nuget/Domain": {},
           "https://artifactory.domain.com.au/api/nuget/Trade/": {},
-          "https://artifactory.domain.com.au/api/nuget/TradePlatform/": {}
+          "https://artifactory.domain.com.au/api/nuget/TradePlatform/": {},
+          "https://nuget.pkg.github.com/domain-group/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -83,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
